@@ -20,7 +20,21 @@ namespace Asteroids
                 movement.Accelerate(transform.up);
             }
             // Rotate depending on what inputH direction is
-            movement.Rotate(inputH);
+            //movement.Rotate(inputH);
+
+            // if right arrow is pressed
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                movement.RotateRight();
+            }
+            // rotate right
+
+            // if left arrow is pressed
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                movement.RotateLeft();
+            }
+            // rotate left
         }
     }
 }
