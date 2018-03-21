@@ -55,7 +55,7 @@ namespace Asteroids
                 // Spawn at top (true) or bottom (false)
                 if (Random.Range(0, 2) > 0)
                 {
-                    position.y = halfHeight
+                    position.y = halfHeight;
                 }
                 else
                 {
