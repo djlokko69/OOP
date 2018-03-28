@@ -6,17 +6,18 @@ namespace Asteroids
 {
     public class Bullet : MonoBehaviour
     {
-
-        // Use this for initialization
-        void Start()
+        void OnTriggerEnter2D(Collider2D col)
         {
-
+            // if we hit an asteriod
+            if (col.name.Contains("Asteroid"))
+            {
+                GameManager.Instance.AddScore(1);
+                // Destroy the asteroid
+                Destroy(col.gameObject);
+                //Destroy self
+                Destroy(this.gameObject);
+            }
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }
