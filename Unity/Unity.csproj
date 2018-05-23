@@ -85,12 +85,12 @@
     <Compile Include="Assets\~Asteriods\Scripts\Player\Moving.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\Player\Shooting.cs" />
-    <Compile Include="Assets\~Breakout\Scripts\Balls.cs" />
-    <Compile Include="Assets\~Breakout\Scripts\KeepWithinScreen.cs" />
-    <Compile Include="Assets\~Breakout\Scripts\Paddle.cs" />
-    <Compile Include="Assets\~Breakout\Scripts\VisualizeBounds.cs" />
-    <Compile Include="Assets\~Minesweeper2D\Scripts\Grid.cs" />
-    <Compile Include="Assets\~Minesweeper2D\Scripts\Tile.cs" />
+    <Compile Include="Assets\~Minesweeper\Scripts\Grid.cs" />
+    <Compile Include="Assets\~Minesweeper\Scripts\Tile.cs" />
+    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\Balls.cs" />
+    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\KeepWithinScreen.cs" />
+    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\Paddle.cs" />
+    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\VisualizeBounds.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

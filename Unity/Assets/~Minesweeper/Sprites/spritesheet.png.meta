@@ -1,71 +1,72 @@
 fileFormatVersion: 2
-guid: 5bf4610d1cd413743bc1e093f95e58ea
-timeCreated: 1522798317
+guid: 165cc382a9fe81541acc60c5b4d61869
+timeCreated: 1527031520
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Minesweeper_0
-    21300002: Minesweeper_1
-    21300004: Minesweeper_2
-    21300006: Minesweeper_3
-    21300008: Minesweeper_4
-    21300010: Minesweeper_5
-    21300012: Minesweeper_6
-    21300014: Minesweeper_7
-    21300016: Minesweeper_8
-    21300018: Minesweeper_9
-    21300020: Minesweeper_10
-    21300022: Minesweeper_11
-    21300024: Minesweeper_12
-    21300026: Minesweeper_13
-    21300028: Minesweeper_14
-    21300030: Minesweeper_15
-    21300032: Minesweeper_16
-    21300034: Minesweeper_17
-    21300036: Minesweeper_18
-    21300038: Minesweeper_19
-    21300040: Minesweeper_20
-    21300042: Minesweeper_21
-    21300044: Minesweeper_22
-    21300046: Minesweeper_23
-    21300048: Minesweeper_24
-    21300050: Minesweeper_25
-    21300052: Minesweeper_26
-    21300054: Minesweeper_27
-    21300056: Minesweeper_28
-    21300058: Minesweeper_29
-    21300060: Minesweeper_30
-    21300062: Minesweeper_31
-    21300064: Minesweeper_32
-    21300066: Minesweeper_33
-    21300068: Minesweeper_34
-    21300070: Minesweeper_35
-    21300072: Minesweeper_36
-    21300074: Minesweeper_37
-    21300076: Minesweeper_38
-    21300078: Minesweeper_39
-    21300080: Minesweeper_40
-    21300082: Minesweeper_41
-    21300084: Minesweeper_42
-    21300086: Minesweeper_43
-    21300088: Minesweeper_44
-    21300090: Minesweeper_45
-    21300092: Minesweeper_46
-    21300094: Minesweeper_47
-    21300096: Minesweeper_48
-    21300098: Minesweeper_49
-    21300100: Minesweeper_50
-    21300102: Minesweeper_51
-    21300104: Minesweeper_52
-    21300106: Minesweeper_53
-    21300108: Minesweeper_54
-    21300110: Minesweeper_55
-    21300112: Minesweeper_56
-    21300114: Minesweeper_57
-    21300116: Minesweeper_58
-    21300118: Minesweeper_59
-    21300120: Minesweeper_60
-    21300122: Minesweeper_61
+    21300000: spritesheet_0
+    21300002: spritesheet_1
+    21300004: spritesheet_2
+    21300006: spritesheet_3
+    21300008: spritesheet_4
+    21300010: spritesheet_5
+    21300012: spritesheet_6
+    21300014: spritesheet_7
+    21300016: spritesheet_8
+    21300018: spritesheet_9
+    21300020: spritesheet_10
+    21300022: spritesheet_11
+    21300024: spritesheet_12
+    21300026: spritesheet_13
+    21300028: spritesheet_14
+    21300030: spritesheet_15
+    21300032: spritesheet_16
+    21300034: spritesheet_17
+    21300036: spritesheet_18
+    21300038: spritesheet_19
+    21300040: spritesheet_20
+    21300042: spritesheet_21
+    21300044: spritesheet_22
+    21300046: spritesheet_23
+    21300048: spritesheet_24
+    21300050: spritesheet_25
+    21300052: spritesheet_26
+    21300054: spritesheet_27
+    21300056: spritesheet_28
+    21300058: spritesheet_29
+    21300060: spritesheet_30
+    21300062: spritesheet_31
+    21300064: spritesheet_32
+    21300066: spritesheet_33
+    21300068: spritesheet_34
+    21300070: spritesheet_35
+    21300072: spritesheet_36
+    21300074: spritesheet_37
+    21300076: spritesheet_38
+    21300078: spritesheet_39
+    21300080: spritesheet_40
+    21300082: spritesheet_41
+    21300084: spritesheet_42
+    21300086: spritesheet_43
+    21300088: spritesheet_44
+    21300090: spritesheet_45
+    21300092: spritesheet_46
+    21300094: spritesheet_47
+    21300096: spritesheet_48
+    21300098: spritesheet_49
+    21300100: spritesheet_50
+    21300102: spritesheet_51
+    21300104: spritesheet_52
+    21300106: spritesheet_53
+    21300108: spritesheet_54
+    21300110: spritesheet_55
+    21300112: spritesheet_56
+    21300114: spritesheet_57
+    21300116: spritesheet_58
+    21300118: spritesheet_59
+    21300120: spritesheet_60
+    21300122: spritesheet_61
+    21300124: spritesheet_62
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -132,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Minesweeper_0
+      name: spritesheet_0
       rect:
         serializedVersion: 2
         x: 2
@@ -145,7 +146,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_1
+      name: spritesheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -158,7 +159,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_2
+      name: spritesheet_2
       rect:
         serializedVersion: 2
         x: 30
@@ -171,7 +172,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_3
+      name: spritesheet_3
       rect:
         serializedVersion: 2
         x: 44
@@ -184,7 +185,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_4
+      name: spritesheet_4
       rect:
         serializedVersion: 2
         x: 58
@@ -197,7 +198,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_5
+      name: spritesheet_5
       rect:
         serializedVersion: 2
         x: 72
@@ -210,7 +211,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_6
+      name: spritesheet_6
       rect:
         serializedVersion: 2
         x: 86
@@ -223,7 +224,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_7
+      name: spritesheet_7
       rect:
         serializedVersion: 2
         x: 100
@@ -236,7 +237,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_8
+      name: spritesheet_8
       rect:
         serializedVersion: 2
         x: 114
@@ -249,7 +250,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_9
+      name: spritesheet_9
       rect:
         serializedVersion: 2
         x: 128
@@ -262,7 +263,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_10
+      name: spritesheet_10
       rect:
         serializedVersion: 2
         x: 149
@@ -275,7 +276,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_11
+      name: spritesheet_11
       rect:
         serializedVersion: 2
         x: 163
@@ -288,7 +289,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_12
+      name: spritesheet_12
       rect:
         serializedVersion: 2
         x: 177
@@ -301,7 +302,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_13
+      name: spritesheet_13
       rect:
         serializedVersion: 2
         x: 191
@@ -314,7 +315,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_14
+      name: spritesheet_14
       rect:
         serializedVersion: 2
         x: 205
@@ -327,7 +328,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_15
+      name: spritesheet_15
       rect:
         serializedVersion: 2
         x: 219
@@ -340,7 +341,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_16
+      name: spritesheet_16
       rect:
         serializedVersion: 2
         x: 233
@@ -353,7 +354,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_17
+      name: spritesheet_17
       rect:
         serializedVersion: 2
         x: 247
@@ -366,7 +367,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_18
+      name: spritesheet_18
       rect:
         serializedVersion: 2
         x: 261
@@ -379,7 +380,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_19
+      name: spritesheet_19
       rect:
         serializedVersion: 2
         x: 275
@@ -392,7 +393,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_20
+      name: spritesheet_20
       rect:
         serializedVersion: 2
         x: 2
@@ -400,12 +401,12 @@ TextureImporter:
         width: 26
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_21
+      name: spritesheet_21
       rect:
         serializedVersion: 2
         x: 29
@@ -418,7 +419,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_22
+      name: spritesheet_22
       rect:
         serializedVersion: 2
         x: 56
@@ -431,7 +432,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_23
+      name: spritesheet_23
       rect:
         serializedVersion: 2
         x: 83
@@ -444,7 +445,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_24
+      name: spritesheet_24
       rect:
         serializedVersion: 2
         x: 110
@@ -457,7 +458,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_25
+      name: spritesheet_25
       rect:
         serializedVersion: 2
         x: 149
@@ -470,7 +471,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_26
+      name: spritesheet_26
       rect:
         serializedVersion: 2
         x: 176
@@ -483,7 +484,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_27
+      name: spritesheet_27
       rect:
         serializedVersion: 2
         x: 203
@@ -496,7 +497,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_28
+      name: spritesheet_28
       rect:
         serializedVersion: 2
         x: 230
@@ -509,7 +510,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_29
+      name: spritesheet_29
       rect:
         serializedVersion: 2
         x: 257
@@ -522,7 +523,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_30
+      name: spritesheet_30
       rect:
         serializedVersion: 2
         x: 2
@@ -535,7 +536,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_31
+      name: spritesheet_31
       rect:
         serializedVersion: 2
         x: 19
@@ -548,7 +549,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_32
+      name: spritesheet_32
       rect:
         serializedVersion: 2
         x: 36
@@ -561,7 +562,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_33
+      name: spritesheet_33
       rect:
         serializedVersion: 2
         x: 53
@@ -574,7 +575,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_34
+      name: spritesheet_34
       rect:
         serializedVersion: 2
         x: 70
@@ -587,7 +588,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_35
+      name: spritesheet_35
       rect:
         serializedVersion: 2
         x: 87
@@ -600,7 +601,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_36
+      name: spritesheet_36
       rect:
         serializedVersion: 2
         x: 104
@@ -613,7 +614,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_37
+      name: spritesheet_37
       rect:
         serializedVersion: 2
         x: 121
@@ -626,7 +627,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_38
+      name: spritesheet_38
       rect:
         serializedVersion: 2
         x: 149
@@ -639,7 +640,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_39
+      name: spritesheet_39
       rect:
         serializedVersion: 2
         x: 166
@@ -652,7 +653,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_40
+      name: spritesheet_40
       rect:
         serializedVersion: 2
         x: 183
@@ -665,7 +666,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_41
+      name: spritesheet_41
       rect:
         serializedVersion: 2
         x: 200
@@ -678,7 +679,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_42
+      name: spritesheet_42
       rect:
         serializedVersion: 2
         x: 217
@@ -691,7 +692,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_43
+      name: spritesheet_43
       rect:
         serializedVersion: 2
         x: 234
@@ -704,7 +705,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_44
+      name: spritesheet_44
       rect:
         serializedVersion: 2
         x: 251
@@ -717,7 +718,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_45
+      name: spritesheet_45
       rect:
         serializedVersion: 2
         x: 268
@@ -730,7 +731,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_46
+      name: spritesheet_46
       rect:
         serializedVersion: 2
         x: 2
@@ -743,7 +744,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_47
+      name: spritesheet_47
       rect:
         serializedVersion: 2
         x: 19
@@ -756,7 +757,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_48
+      name: spritesheet_48
       rect:
         serializedVersion: 2
         x: 36
@@ -769,7 +770,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_49
+      name: spritesheet_49
       rect:
         serializedVersion: 2
         x: 53
@@ -782,7 +783,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_50
+      name: spritesheet_50
       rect:
         serializedVersion: 2
         x: 70
@@ -795,7 +796,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_51
+      name: spritesheet_51
       rect:
         serializedVersion: 2
         x: 87
@@ -808,7 +809,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_52
+      name: spritesheet_52
       rect:
         serializedVersion: 2
         x: 104
@@ -821,7 +822,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_53
+      name: spritesheet_53
       rect:
         serializedVersion: 2
         x: 121
@@ -834,7 +835,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_54
+      name: spritesheet_54
       rect:
         serializedVersion: 2
         x: 149
@@ -847,7 +848,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_55
+      name: spritesheet_55
       rect:
         serializedVersion: 2
         x: 166
@@ -860,7 +861,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_56
+      name: spritesheet_56
       rect:
         serializedVersion: 2
         x: 183
@@ -873,7 +874,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_57
+      name: spritesheet_57
       rect:
         serializedVersion: 2
         x: 200
@@ -886,7 +887,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_58
+      name: spritesheet_58
       rect:
         serializedVersion: 2
         x: 217
@@ -899,7 +900,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_59
+      name: spritesheet_59
       rect:
         serializedVersion: 2
         x: 234
@@ -912,7 +913,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_60
+      name: spritesheet_60
       rect:
         serializedVersion: 2
         x: 251
@@ -925,7 +926,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Minesweeper_61
+      name: spritesheet_61
       rect:
         serializedVersion: 2
         x: 268
@@ -934,6 +935,19 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 290
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
