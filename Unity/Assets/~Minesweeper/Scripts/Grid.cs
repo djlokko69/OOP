@@ -61,22 +61,19 @@ namespace Minesweeper
             }
         }
         #endregion
-        #region Start
         void Start()
         {
             GenerateTiles();
         }
-        #endregion
-        #region GetAdjacentMineCount
         public int GetAdjacentMineCount(Tile tile)
         {
             // Set count to 0
             int count = 0;
             // loop through all the adjacent tiles on the x
-            for (int x = 0; x <= 1; x++)
+            for (int x = -1; x <= 1; x++)
             {
                 // loop through all the adjacent tiles on the y
-                for (int y = 0; y <= 1; y++)
+                for (int y = -1; y <= 1; y++)
                 {
                     // Calculate which adjacent tile to look at
                     int desiredX = tile.x + x;
@@ -99,7 +96,6 @@ namespace Minesweeper
             // Remember to return the count
             return count;
         }
-        #endregion
         #region SelectATile
         void SelectATile()
         {
@@ -129,8 +125,23 @@ namespace Minesweeper
             // Check if Mouse Button is pressed
             if (Input.GetMouseButtonDown(0))
             {
-                // Run the method for selecting tiles
-                SelectATile();
+                // Ray cast from the camera using the mouse Position
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+                /// did the raycast hit something?
+                if (hit.collider != null)
+                {
+                    // is the thing we hit a 'Tile'?
+                    Tile hitTile = hit.collider.GetComponent<Tile>();
+                    if (hitTile != null)
+                    {
+                        // perform game logic with selected tiles
+                        SelectTile(hitTile);
+                    }
+                }
+
+
             }
 
         }
@@ -150,7 +161,7 @@ namespace Minesweeper
                 tile.Reveal(adjacentMiles);
 
                 //if there were no adjacent mines around that tile
-                if(adjacentMiles == 0)
+                if (adjacentMiles == 0)
                 {
                     // this tile has been visited
                     visited[x, y] = true;
@@ -158,7 +169,7 @@ namespace Minesweeper
                     FFuncover(x - 1, y, visited);
                     FFuncover(x + 1, y, visited);
                     FFuncover(x, y - 1, visited);
-                    FFuncover(x, y+ 1, visited);
+                    FFuncover(x, y + 1, visited);
                 }
             }
         }
@@ -173,11 +184,65 @@ namespace Minesweeper
                 {
                     Tile tile = tiles[x, y];
                     // check if tile is a mine
-                    if(tile.isMine)
+                    if (tile.isMine)
                     {
                         int adjacentMines = GetAdjacentMineCount(tile);
+                        tile.Reveal(adjacentMines, mineState);
                     }
                 }
+            }
+        }
+        #endregion
+        #region NoMoreEmptyTiles
+        bool NoMoreEmptyTiles()
+        {
+            // set empty tile count to zero
+            int emptyTileCount = 0;
+            // loop through 2D array
+            for (int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    Tile tile = tiles[x, y];
+                    // if tile is not revealed and not a mine
+                    if (!tile.isRevealed && !tile.isMine)
+                    {
+                        // we found an empty tile!
+                        emptyTileCount += 1;
+                    }
+                }
+            }
+            // if there are empty tiles - return true
+            // if there are no empty tiles - return false
+            return emptyTileCount == 0;
+        }
+        #endregion
+        #region SelectTile
+        void SelectTile(Tile selected)
+        {
+            int adjacentMines = GetAdjacentMineCount(selected);
+            selected.Reveal(adjacentMines);
+
+            // is the selected tile a mine?
+            if (selected.isMine)
+            {
+                // uncover all mines - with default loss state '0'
+                UncoverMines();
+                // lose
+            }
+            // otherwise, are there no mines around this tile?
+            else if (adjacentMines == 0)
+            {
+                int x = selected.x;
+                int y = selected.y;
+                // then use flood fill to uncover all adjacent mines
+                FFuncover(x, y, new bool[width, height]);
+            }
+            // are there no more empty tiles in the game at this point?
+            if (NoMoreEmptyTiles())
+            {
+                // Uncover all mines - with the win state '1'
+                UncoverMines(1);
             }
         }
         #endregion
