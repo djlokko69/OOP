@@ -13,7 +13,7 @@ namespace Minesweeper
 
         private Tile[,] tiles;
         #endregion
-
+        #region SpawnTile
         // Functionality for spawning tiles
         Tile SpawnTile(Vector3 pos)
         {
@@ -25,6 +25,8 @@ namespace Minesweeper
             // Return it
             return currentTile;
         }
+        #endregion
+        #region GenerateTiles
         // Spawns tiles in a grid like pattern
         void GenerateTiles()
         {
@@ -58,10 +60,14 @@ namespace Minesweeper
                 }
             }
         }
+        #endregion
+        #region Start
         void Start()
         {
             GenerateTiles();
         }
+        #endregion
+        #region GetAdjacentMineCount
         public int GetAdjacentMineCount(Tile tile)
         {
             // Set count to 0
@@ -93,6 +99,8 @@ namespace Minesweeper
             // Remember to return the count
             return count;
         }
+        #endregion
+        #region SelectATile
         void SelectATile()
         {
             // Generate a ray from camera with mouse position
@@ -114,6 +122,8 @@ namespace Minesweeper
                 }
             }
         }
+        #endregion
+        #region Update
         void Update()
         {
             // Check if Mouse Button is pressed
@@ -124,5 +134,52 @@ namespace Minesweeper
             }
 
         }
+        #endregion
+        #region FFuncover
+        void FFuncover(int x, int y, bool[,] visited)
+        {
+            // is x and y within bounds of the grid?
+            if (x >= 0 && y >= 0 && x < width && y < height)
+            {
+                // have these coordinates been visited?
+                if (visited[x, y])
+                    return;
+                // reveal tile in that x and y coordinate
+                Tile tile = tiles[x, y];
+                int adjacentMiles = GetAdjacentMineCount(tile);
+                tile.Reveal(adjacentMiles);
+
+                //if there were no adjacent mines around that tile
+                if(adjacentMiles == 0)
+                {
+                    // this tile has been visited
+                    visited[x, y] = true;
+                    // visit all other tiles around this tile
+                    FFuncover(x - 1, y, visited);
+                    FFuncover(x + 1, y, visited);
+                    FFuncover(x, y - 1, visited);
+                    FFuncover(x, y+ 1, visited);
+                }
+            }
+        }
+        #endregion
+        #region UncoverMines
+        void UncoverMines(int mineState = 0)
+        {
+            // Loop through 2D array
+            for (int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    Tile tile = tiles[x, y];
+                    // check if tile is a mine
+                    if(tile.isMine)
+                    {
+                        int adjacentMines = GetAdjacentMineCount(tile);
+                    }
+                }
+            }
+        }
+        #endregion
     }
 }
