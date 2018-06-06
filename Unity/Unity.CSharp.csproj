@@ -85,12 +85,12 @@
     <Compile Include="Assets\~Asteriods\Scripts\Player\Moving.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\Player\Shooting.cs" />
+    <Compile Include="Assets\~Breakout\Scripts\Balls.cs" />
+    <Compile Include="Assets\~Breakout\Scripts\KeepWithinScreen.cs" />
+    <Compile Include="Assets\~Breakout\Scripts\Paddle.cs" />
+    <Compile Include="Assets\~Breakout\Scripts\VisualizeBounds.cs" />
     <Compile Include="Assets\~Minesweeper\Scripts\Grid.cs" />
     <Compile Include="Assets\~Minesweeper\Scripts\Tile.cs" />
-    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\Balls.cs" />
-    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\KeepWithinScreen.cs" />
-    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\Paddle.cs" />
-    <Compile Include="Assets\~Minesweeper\Sprites\~Breakout\Scripts\VisualizeBounds.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

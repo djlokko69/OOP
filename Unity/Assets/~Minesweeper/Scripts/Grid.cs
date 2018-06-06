@@ -96,54 +96,41 @@ namespace Minesweeper
             // Remember to return the count
             return count;
         }
-        #region SelectATile
-        void SelectATile()
+       
+        void FlagTile(Tile selected)
         {
-            // Generate a ray from camera with mouse position
-            Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            // Perform raycast
-            RaycastHit2D hit = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
-            // If the mouse hit something
-            if (hit.collider != null)
-            {
-                // Try getting a Tile component from the thing we hit
-                Tile hitTile = hit.collider.GetComponent<Tile>();
-                // Check if the thing it hit was a tile
-                if (hitTile != null)
-                {
-                    // Get a count of all mines around the hit tile
-                    int adjacentMines = GetAdjacentMineCount(hitTile);
-                    // Reveal what that hit tile is
-                    hitTile.Reveal(adjacentMines);
-                }
-            }
+            selected.Flag();
         }
-        #endregion
+
         #region Update
         void Update()
         {
-            // Check if Mouse Button is pressed
-            if (Input.GetMouseButtonDown(0))
-            {
-                // Ray cast from the camera using the mouse Position
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            // Ray cast from the camera using the mouse Position
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
 
-                /// did the raycast hit something?
-                if (hit.collider != null)
+            /// did the raycast hit something?
+            if (hit.collider != null)
+            {
+                // is the thing we hit a 'Tile'?
+                Tile hitTile = hit.collider.GetComponent<Tile>();
+                if (hitTile != null)
                 {
-                    // is the thing we hit a 'Tile'?
-                    Tile hitTile = hit.collider.GetComponent<Tile>();
-                    if (hitTile != null)
+                    // Check if Mouse Button is pressed
+                    if (Input.GetMouseButtonDown(0))
                     {
                         // perform game logic with selected tiles
                         SelectTile(hitTile);
                     }
+                    // Check if Mouse Button is pressed
+                    if (Input.GetMouseButtonDown(1))
+                    {
+
+                        // perform game logic with selected tiles
+                        FlagTile(hitTile);
+                    }
                 }
-
-
             }
-
         }
         #endregion
         #region FFuncover
@@ -220,6 +207,12 @@ namespace Minesweeper
         #region SelectTile
         void SelectTile(Tile selected)
         {
+            // If the selected tile is flagged
+            if (selected.isFlagged)
+            {
+                // Exit the function
+                return;
+            }
             int adjacentMines = GetAdjacentMineCount(selected);
             selected.Reveal(adjacentMines);
 

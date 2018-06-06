@@ -12,12 +12,11 @@ namespace Minesweeper
         public bool isMine = false; // Is the current tile a mine?
         public bool isRevealed = false; // Has the tile already been revealed?
         public bool isFlagged = false;
-        public bool unFlagged = false;
         [Header("Reference")]
         public Sprite[] emptySpirtes; // List of empty sprites i.e, empty, 1, 2, 3, etc...
         public Sprite[] mineSprites; // The mine sprites
+        public Sprite[] flagSprites;
         private SpriteRenderer rend; // Reference to sprite renderer
-        private Sprite[] flagSprites;
         #endregion
 
         void Awake()
@@ -29,7 +28,7 @@ namespace Minesweeper
         {
             // Randomly decide if this tile is a mine - using a 5% chance
             // each Tile has a 5% chance of being a mine
-            isMine = Random.value < .05f;   
+            isMine = Random.value < .05f;
         }
         public void Reveal(int adjacentMines, int mineState = 0)
         {
@@ -47,16 +46,25 @@ namespace Minesweeper
                 rend.sprite = emptySpirtes[adjacentMines];
             }
         }
-        public void Flag(int adjacentFlags, int flagState = 0)
+        public void Flag()
         {
-            unFlagged = true;
+            // If the tile has already been revealed
+            if(isRevealed)
+            {
+                // Exit the function - You can't flag a tile that is revealed
+                return;
+            }
+            // Toggles true and false everytime this is called
+            isFlagged = !isFlagged;
             if (isFlagged)
             {
-                rend.sprite = flagSprites[flagState];
+                // 0 = flag sprite
+                rend.sprite = flagSprites[1];
             }
             else
             {
-                rend.sprite = emptySpirtes[adjacentFlags];
+                //  1 = original sprite
+                rend.sprite = flagSprites[0];
             }
         }
     }
