@@ -26,6 +26,8 @@ namespace Breakout
             Vector3 reflect = Vector3.Reflect(velocity, contact.normal);
             // Calculate new velocity from reflection multiply by the same speed (velocity.magnitude)
             velocity = reflect.normalized * velocity.magnitude;
+
+            
         }
         private void Update()
         {

@@ -75,7 +75,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\~AHundredBalls\Scripts\BucketScript.cs" />
     <Compile Include="Assets\~AHundredBalls\Scripts\PaddleScript.cs" />
     <Compile Include="Assets\~AHundredBalls\Scripts\SpawnerScript.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\AsteriodSpawner.cs" />
@@ -87,6 +86,7 @@
     <Compile Include="Assets\~Asteriods\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\~Asteriods\Scripts\Player\Shooting.cs" />
     <Compile Include="Assets\~Breakout\Scripts\Balls.cs" />
+    <Compile Include="Assets\~Breakout\Scripts\DestroyBricks.cs" />
     <Compile Include="Assets\~Breakout\Scripts\KeepWithinScreen.cs" />
     <Compile Include="Assets\~Breakout\Scripts\Paddle.cs" />
     <Compile Include="Assets\~Breakout\Scripts\VisualizeBounds.cs" />

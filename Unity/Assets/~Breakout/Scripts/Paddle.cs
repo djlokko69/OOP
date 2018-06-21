@@ -20,7 +20,7 @@ namespace Breakout
         void Start()
         {
             // Grabs currentBall from children of the Paddle
-            currentBall = GetComponent<Balls>();
+            currentBall = GetComponentInChildren<Balls>();
         }
 
         void Fire()
